@@ -1,0 +1,331 @@
+/*/////////////////////////////////////*/
+/*               footer                */
+/*/////////////////////////////////////*/
+
+footer{
+    width: 100%;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-blanco);
+}
+.border_left_footer,
+.border_right_footer{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+}
+
+.border_left_footer{
+    border-bottom-left-radius: 90px;
+    box-shadow: -13px 13px 0px 12px #ffffff;
+    bottom: -531px;
+    left: 0px;
+}
+.border_right_footer{
+    border-bottom-right-radius: 90px;
+    box-shadow: 13px 13px 0px 12px #ffffff;
+    bottom: -531px;
+    right: 0px;
+}
+
+/*               socials media              */
+
+#ContRowSocialMedia{
+    display: flex;
+    column-gap: 25px;
+    padding-top: 25px;    
+}
+.socialMedia{
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background-color: var(--color-amarillo);
+    transition: 350ms;
+}
+.socialMedia:hover{
+    background-color: var(--color-amarillo-hover);
+}
+#facebook_media,
+#instagram_media{ 
+    width: 25px;
+    height: 25px;
+
+    transition: 250ms;
+}
+.socialMedia:hover #facebook_media,
+.socialMedia:hover #instagram_media{ 
+    transform: rotate(-15deg);
+}
+#mail_media{
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../IMG/iconos/envelope-solid-close.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: 50ms;
+}
+.socialMedia:hover #mail_media{
+    background-image: url("../IMG/iconos/envelope-solid-open.svg");
+}
+/*                 dropdown                 */
+
+#ContFooter{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+#rowFooterSocials,
+#ContDropdownFooter{
+    width: 50%;
+}
+#rowFooterSocials h1{
+    font-family: 'Heuristica-Regular';
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.titolItemAcc{
+    padding: 15px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.textTitleAcc_{
+    width: 100%;
+
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #313131;
+    text-decoration: none;
+
+    overflow: hidden;
+    transition: height 350ms ease;
+}
+.textBaseAcc_df{
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    color: #535353;
+    text-decoration: none;
+}
+.textBaseAcc{
+    height: 0px;
+    width: 100%;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #535353;
+    font-size: 12px !important;
+    padding: 0 10px;
+    border-bottom: 1px solid #d1d1d1;
+
+    overflow: hidden;
+    transition: height 350ms ease;
+}
+.spanLine1{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: math;
+}
+
+.accHeight1,
+.accHeight2{
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+#ContSpanLine,
+#ContSpanLine_two {
+    transition: 450ms;
+}
+.rotate_x,
+.rotate_x_two{
+    transform: rotate(45deg);
+}
+/*-------------------------------------*/
+
+#ContFooterCopy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rowCopy{
+    width: 75%;
+    padding: 60px 0;
+    font-size: 0.84em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid;
+}
+#ContFooterCopy h3{
+    font-weight: 100;
+}
+#ContFooterLegal a{
+    color: var(--color-negro);
+}
+#ContFooterLegal a:hover{
+    color: var(--color-gris-oscuro);
+}
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------tablet-------------------*/
+
+@media only screen and (max-width: 1360px){
+/*BORDERS*/
+    .border_left_footer,
+    .border_right_footer {
+        display: none;
+    }
+/*TEXT*/
+    #rowFooterSocials h1 {
+        font-size: 4vw;
+    }
+/*REDES*/
+    #ContRowSocialMedia {
+        column-gap: 15px;
+    }
+/*FINAL*/
+    .rowCopy {
+        width: 75%;
+        padding: 45px 0;
+        font-size: 0.77em;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1024px){
+/*BORDERS*/
+    .border_left_footer,
+    .border_right_footer {
+        display: none;
+    }
+/*TEXT*/
+    #rowFooterSocials h1 {
+        font-size: 4vw;
+    }
+/*REDES*/
+    #ContRowSocialMedia {
+        column-gap: 15px;
+    }
+/*DESPLEGABLE*/
+    .accHeight1, .accHeight2 {
+        height: 70px;
+    }
+/*FINAL*/
+    .rowCopy {
+        width: 75%;
+        padding: 45px 0;
+        font-size: 0.77em;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px){
+    #ContFooter {
+        padding-bottom: 70px;
+    }
+/*BORDERS*/
+    .border_right_footer {
+        bottom: -354px;
+    }
+    .border_left_footer {
+        bottom: -354px;
+    }
+/*TEXT*/
+    #rowFooterSocials h1 {
+        padding-top: 10px;
+    }
+/*DESPLEGABLE*/
+    .accHeight1, .accHeight2 {
+        height: 82px;
+    }
+/*FINAL*/
+    .rowCopy {
+        width: 75%;
+        padding: 45px 0;
+        column-gap: 100px;
+        font-size: 0.77em;
+    }
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 720px){
+    footer {
+        padding-top: 32px;
+    }
+
+    .rowCopy {
+        padding: 21px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+    #ContFooterCopy h3 {
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+    }
+    #ContFooterLegal{
+        font-size: 3vw;
+    }
+
+    #ContFooter {
+        width: 75%;
+        padding-bottom: 40px;
+
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .titolItemAcc {
+        font-size: 3.2vw;
+    }
+    .textBaseAcc_df {
+        padding: 0 0px;
+        font-size: 3vw;
+    }
+    .textBaseAcc {
+        padding: 0 0px;
+    }
+
+
+    #rowFooterSocials, #ContDropdownFooter {
+        width: 100%;
+    }
+    #rowFooterSocials {
+        padding-bottom: 0px;
+    }
+    #rowFooterSocials h1 {
+        display: none;
+    }
+    #ContRowSocialMedia {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 37px;
+    }
+    .socialMedia {
+        width: 55px;
+        height: 55px;
+        background-color: var(--color-social-media-responsive);
+    }
+}

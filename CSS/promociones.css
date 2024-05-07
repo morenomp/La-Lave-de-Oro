@@ -1,0 +1,526 @@
+/*/////////////////////////////////////*/
+/*                root                 */
+/*/////////////////////////////////////*/
+:root{
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
+    --color-amarillento: #F7F2E8;
+    --color-amarillo: #FFCC00;
+    --color-amarillo-hover: #E4B700;
+    --color-amarillo-oscuro-animate: #c5c1b8;
+
+    --color-gris-oscuro: #37383A;
+    --color-gris-oscuro_opacity: #37383af2;
+    --color-gris-scroll: #7A7A7A;
+
+    --color-search-grey: #CBCBCB;
+    --color-search-arrow: #ebe6dc;
+    --color-scroll-search: #9d9a93;
+}
+/*/////////////////////////////////////*/
+/*             CLIP PATH               */
+/*/////////////////////////////////////*/
+#cortePathPromo{
+	width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 935px;
+    background-color: var(--color-blanco);
+    clip-path: polygon(0 80%, 100% 0%, 100% 100%, 0 100%);
+    transition: 410ms;
+}
+/*/////////////////////////////////////*/
+/*        BANNER INICIO PROMO          */
+/*/////////////////////////////////////*/
+#ContBannerPromo{
+	width: 100%;
+	height: 95vh;
+	background-image: url("../IMG/Promociones destacadas/Marenostrum.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /*filter: brightness(0.75);*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#ContBannerPromo div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 30px 60px;
+    margin: 210px 0px 0px 42px;
+    color: var(--color-blanco);
+    background-color: var(--color-gris-oscuro_opacity);
+}
+#ContBannerPromo h1{
+	font-size: 3.4vw;
+	font-family: Heuristica Regular;
+	font-weight: 100;
+
+    position: relative;
+    bottom: -20px;
+}
+.efectoNombre{
+	font-size: 1.3vw;
+	padding-top: 20px;
+	font-weight: 100;
+
+	position: relative;
+    bottom: -20px;
+    opacity: 0.7;
+    transition: 350ms;
+}
+#ContBannerPromo div:hover .efectoNombre{
+	opacity: 0;
+	bottom: -58px;
+}
+#verMasPromo{
+	width: 300px;
+    text-align: center;
+    padding: 12px 55px;
+
+    border-radius: 50px;
+    color: var(--color-negro);
+    background: var(--color-amarillo);
+
+    position: relative;
+    bottom: -20px;
+    transition: 350ms;
+
+    opacity: 0;
+}
+#ContBannerPromo div:hover #verMasPromo{
+	opacity: 1;
+	bottom: 14px;
+}
+#verMasPromo:hover{
+	background: var(--color-amarillo-hover);
+}
+
+/*             filtro             */
+
+#ContListaPromo{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-blanco);
+    flex-direction: column;
+    align-items: flex-end;
+}
+#ContListaPromo ul{
+    width: 100%;
+    height: 126px;
+
+    position: sticky;
+    top: 0;
+
+    list-style: none;
+    padding: 5px;
+    background-color: var(--color-blanco);
+
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.listaPromo{
+    padding: 5px 15px;
+    border: 1px solid var(--color-blanco);
+    cursor: pointer;
+    transition: 300ms;
+}
+.listaPromo:hover{
+    border-radius: 50px;
+    border: 1px solid var(--color-amarillo);
+}
+#listaPromo{
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--color-amarillo);
+    align-items: center;
+}
+
+.listaPromo a{
+    color: var(--color-negro);
+    font-size: 1em;
+}
+
+/*             Cont Todo             */
+
+#containerPromoViviendas{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 15px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+/*      scroll modificado     */
+
+#containerPromoViviendas::-webkit-scrollbar {
+    background: var(--color-search-arrow) !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+}
+#containerPromoViviendas::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll-search) !important;
+    border-radius: 20px;
+    border: 2.5px solid var(--color-search-arrow);
+}
+#containerPromoViviendas::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scroll-search) !important;
+}
+#containerPromoViviendas::-webkit-scrollbar:horizontal {
+    width: 12px;
+}  
+.imgFromPromo {
+    width: 365px;
+    height: 520px;
+    margin: 10px;
+
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    transition: 250ms;
+    border-radius: 20px;
+}
+.ContHsPromo h4{
+    color: var(--color-gris-oscuro);
+    font-weight: 100;
+}
+.ContHsPromo h2{
+    color: var(--color-gris-oscuro);
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.ContHsPromo {
+    width: 100%;
+    padding: 25px 0;
+    background-color: var(--color-amarillento);
+    transition: 250ms;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/*-----*/
+.ContPromoFlex{
+    width: 365px;
+}
+.hsPromo {
+    padding: 0px 10px 10px 10px;
+}
+.hsPromoOne {
+    padding: 0px 10px 25px 10px;
+    font-family: Heuristica-Regular;
+}
+.hsPromoTwo {
+    padding: 0px 10px 10px 10px;
+}
+
+
+/*             edificio background             */
+
+#ed_1_promo{
+    background: url("../IMG/Promociones destacadas/Edifici_Aprestadora.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_2_promo{
+    background: url("../IMG/Promociones destacadas/Edifici_Barcelona.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_3_promo{
+    background: url("../IMG/Promociones destacadas/Gomis_42.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_4_promo{
+    background: url("../IMG/Promociones destacadas/La_Solera.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_5_promo{
+    background: url("../IMG/Promociones destacadas/Marenostrum.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_6_promo{
+    background: url("../IMG/Promociones destacadas/Montcada_Residencial.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_7_promo{
+    background: url("../IMG/Promociones destacadas/Pg_Maragall_368.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_8_promo{
+    background: url("../IMG/Promociones destacadas/Plaça_Catalana.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_9_promo{
+    background: url("../IMG/Promociones destacadas/Residencial_Can_Trias.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_10_promo{
+    background: url("../IMG/Promociones destacadas/Residencial_El_Lledoner_2.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_11_promo{
+    background: url("../IMG/Promociones destacadas/Residencial_La_Bòbila.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_12_promo{
+    background: url("../IMG/Todas las promociones/Mitre.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_13_promo{
+    background: url("../IMG/Todas las promociones/Residencial_La_Triola.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+/*----*/
+#ed_15_promo{
+    background: url("../IMG/Todas las promociones/Placa_Europa_II.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_16_promo{
+    background: url("../IMG/Todas las promociones/Can_Verboom.png");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_17_promo{
+    background: url("../IMG/Todas las promociones/Residencial_Tres_Creus.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_18_promo{
+    background: url("../IMG/Todas las promociones/La_Sinia.png");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_19_promo{
+    background: url("../IMG/Todas las promociones/Arago_226.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+#ed_20_promo{
+    background: url("../IMG/Todas las promociones/Santal0_143.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------tablet-------------------*/
+@media only screen and (max-width: 1477px){
+/*TEXT CAJA*/
+    #ContBannerPromo h1 {
+        font-size: 3em;
+    }
+    .efectoNombre {
+        font-size: 17px;
+    }
+    #verMasPromo {
+        width: 285px;
+        padding: 8px 30px;
+    }
+    #ContBannerPromo div:hover #verMasPromo {
+        bottom: 3px;
+    }
+}
+@media only screen and (max-height: 1070px){
+/*CLIP PATH*/
+    #cortePathPromo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1280px){
+/*CLIP PATH*/
+    #cortePathPromo{
+        display: none
+    }
+}
+@media only screen and (max-width: 1024px){
+/*TEXT CAJA*/
+    #ContBannerPromo h1 {
+        font-size: 2.4em;
+    }
+    .efectoNombre {
+        font-size: 14.5px;
+    }
+    #verMasPromo {
+        width: 245px;
+        padding: 6px 20px;
+    }
+    #ContBannerPromo div:hover #verMasPromo {
+        bottom: 3px;
+    }
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 680px){
+/*TEXT CAJA*/
+    #ContBannerPromo{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    #ContBannerPromo div{
+        width: 100%;
+        padding: 30px 60px;
+        margin:0px;
+    }
+/*MENÚ*/
+    #ContListaPromo ul, 
+    #ContListaPromo_Two ul {
+        height: 100%;
+        column-gap: 5px;
+        padding: 20px 5px;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    .listaPromo a {
+        font-size: 0.84em;
+    }
+/*IMGS*/
+    .imgFromPromo {
+        width: 315px;
+        height: 430px;
+    }
+/*SLIDER*/
+    #containerPromoViviendas {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    #containerPromoViviendas_Two {
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+/*scroll modificado*/
+
+    #containerPromoViviendas_Two::-webkit-scrollbar {
+        background: var(--color-search-arrow) !important;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+    }
+    #containerPromoViviendas_Two::-webkit-scrollbar-thumb {
+        background-color: var(--color-scroll-search) !important;
+        border-radius: 20px;
+        border: 2.5px solid var(--color-search-arrow);
+    }
+    #containerPromoViviendas_Two::-webkit-scrollbar-thumb:hover {
+        background: var(--color-scroll-search) !important;
+    }
+    #containerPromoViviendas_Two::-webkit-scrollbar:horizontal {
+        width: 12px;
+    }  
+}
+@media only screen and (max-width: 490px){
+/*MENÚ*/
+    #ContListaPromo ul, 
+    #ContListaPromo_Two ul {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 110px;
+        list-style: none;
+        padding: 5px;
+        background-color: var(--color-amarillento);
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaPromo {
+        border: 0px;
+    }
+/**/
+    #ContBannerPromo div {
+        padding: 30px;
+    }
+    #ContBannerPromo h1 {
+        font-size: 2em;
+    }
+}
+/*------------------Galaxy Fold (plegable)-------------------*/
+@media only screen and (max-width: 360px){
+    #ContListaPromo ul,
+    #ContListaPromo_Two ul {
+        width: 100%;
+        height: 70px;
+        top: 100px;
+    }
+    .listaPromo {
+        padding: 3px 10px;
+    }
+    .listaPromo a {
+        font-size: 0.64em;
+    }
+
+    #ContBannerPromo h1 {
+        font-size: 1.5em;
+    }
+    .efectoNombre {
+        font-size: 11.5px;
+        padding-top: 10px;
+    }
+    #verMasPromo {
+        width: 219px;
+        padding: 6px 20px;
+        font-size: 12.5px;
+    }
+}

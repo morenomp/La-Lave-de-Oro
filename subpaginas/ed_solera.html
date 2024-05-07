@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Subpágina Edificio Aprestadora">
+
+	<meta name="keywords" content="Oro, Llave, Inicio, Home">
+
+	<meta name="author" content="Marc Moreno Pineda">
+
+	<meta name="copyright" content="propiedades del copyright Marc Moreno Pineda">
+
+	<meta name="revised" content="Marzo 2024">
+	
+	<link rel="stylesheet" href="../CSS/subpags.css">
+
+	<link rel="stylesheet" href="../CSS/inicio.css">
+	<link rel="stylesheet" href="../CSS/header.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+	<link rel="stylesheet" href="../CSS/fuentes.css">
+	<link rel="stylesheet" href="../CSS/search.css">
+	<link rel="stylesheet" href="../CSS/menu.css">
+
+	<link rel="icon" type="image/png" href="../IMG/iconos/favicon.png">
+
+	<title>ES | La Solera</title>
+</head>
+
+<body id="column_pc" class="scroll">
+<!-- -------------------------------------------- -->
+<!--             Animación de entrada             -->
+<!-- -------------------------------------------- -->
+	<span id="bgSearchAnimateImg"></span>
+	<span id="bgSearchAnimate" class="activeSearchAnimate"></span>
+	<span id="bgSearchAnimateTwo"></span>
+<!-- -------------------------------------------- -->
+<!--                    HEADER                    -->
+<!-- -------------------------------------------- -->
+
+	<div class="progress-bar"></div>
+
+	<script src="../JS/menu_effect_sobrenosotros.js"></script>
+	
+	<header>
+
+		<div id="row_top"></div>
+
+		<section id="ContTodoHeader">
+
+			<span class="border_left"></span>
+
+			<a href="../inicio.html" id="ContLogoHeader">
+
+				<img id="logo_header" src="../IMG/iconos/logo_pc.png" alt="logotipo de la empresa">
+				
+				<img id="logo_header_two" src="../IMG/iconos/favicon.png" alt="logotipo de la empresa">
+
+			</a>
+
+			<span class="border_left_two"></span>
+
+			<section id="search_burguer_header">
+				
+				<span class="border_right"></span>
+
+				<button class="search_button" id="search_button" onclick="abrirSearch()">
+
+					<img id="search_img" src="../IMG/iconos/search_pc.svg" alt="icono de busqueda">
+
+					<span id="line_one_search"></span>
+					<span id="line_two_search"></span>
+
+					<span id="line_x_one_search"></span>
+					<span id="line_x_two_search"></span>
+
+					<button id="line_x_search_id" onclick="cerrarSearch()"></button>
+
+				</button>
+
+				<button id="opacSearch"></button>
+				<button id="opacBurguer"></button>
+
+				<button class="burguer_button" id="burguer_button" onclick="abrirBurguer()">
+
+					<span id="line_one"></span>
+					<span id="line_two"></span>
+
+					<span id="line_x_one"></span>
+					<span id="line_x_two"></span>
+
+					<button id="line_x_id" onclick="cerrarBurguer()"></button>
+						
+				</button>
+
+				<span class="border_right_two"></span>
+
+			</section>
+		</section>
+	</header>
+<!-- -------------------------------------------- -->
+<!--                      MAIN                    -->
+<!-- -------------------------------------------- -->
+	<main>
+<!-- --------------------------------------------- -->
+<!--                Menu Entero                    -->
+<!-- --------------------------------------------- -->
+
+	<section id="ContMenuTodo" class="activeMenu">
+		<div id="contmenu">
+			<ul>
+				<li class="flexMenuText">
+					<a class="colorMenu" href="../inicio.html">
+						HOME
+						<span class="spanLineMenu spanLineMenu_home"></span>
+					</a>
+				</li>
+
+				<li class="flexMenuText">
+					
+					<a class="colorMenu seleccionadoMenu" href="../promociones.html">
+						PROMOCIONES
+						<span class="spanLineMenu spanLineMenu_promo"></span>
+					</a>
+				</li>
+
+				<li class="flexMenuText">
+					<a class="colorMenu" href="../otro_inmuebles.html">
+						OTROS INMUEBLES
+						<span class="spanLineMenu spanLineMenu_inmuebles"></span>
+					</a>
+				</li>
+
+				<li class="flexMenuText">
+					<a class="colorMenu" href="../sobre_nosotros.html">
+						SOBRE NOSOTROS
+						<span class="spanLineMenu spanLineMenu_nosotros"></span>
+					</a>
+				</li>
+
+				<li class="flexMenuText">
+					<a class="colorMenu" href="../contacto.html">
+						CONTACTO
+						<span class="spanLineMenu spanLineMenu_contacto"></span>
+					</a>
+				</li>
+
+			</ul>
+<!-- -------------------------------------------- -->
+<!--                    REDES                     -->
+<!-- -------------------------------------------- -->
+			<div id="ContRowSocialMediaMenu">
+				<a class="socialMedia" href="https://www.facebook.com/promotoraLaLlavedeOro/" target="_blank">
+					<img id="facebook_media" src="../IMG/iconos/facebook-f.svg" alt="icono de facebook, red social">
+				</a>
+
+				<a class="socialMedia" href="https://www.instagram.com/lallavedeoro_promotora/" target="_blank">
+					<img id="instagram_media" src="../IMG/iconos/instagram-i.svg" alt="icono de instagram, red social">
+				</a>
+
+				<a class="socialMedia" href="../contacto.html" target="_blank">
+					<div id="mail_media"></div>
+				</a>
+			</div>
+<!-- -------------------------------------------- -->
+<!--                   IDIOMAS                    -->
+<!-- -------------------------------------------- -->
+			<div id="idiomasMenu">
+				<a href="../#" class="idiomas seleccionadoIdioma">ESP</a>
+				<span>|</span>
+				<a href="../#" class="idiomas noSleccionadoIdioma">CAT</a>
+				<span>|</span>
+				<a href="../#" class="idiomas noSleccionadoIdioma">ENG</a>
+			</div>
+		</div>
+
+		<script src="../JS/menu.js"></script>
+
+	</section>
+
+<!-- --------------------------------------------- -->
+<!--              Search Entero                    -->
+<!-- --------------------------------------------- -->
+
+	<section id="ContSearchTodo" class="activeSearch">
+		<div id="contsearch">
+			<input type="text" id="inputBusqueda" placeholder=" Busca una ciudad...">
+			<!-- <button type="reset" id="cerrar">X</button> -->
+		</div>
+
+		<div id="container">
+			
+			<a href="../subpaginas/ed_aprestadora.html" class="imgFromSearch barcelona hospitalet llobregat bcn" id="ed_1">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Aprestadora</h2>
+						<h4 class="hsSearch">L'Hospitalet de Llobregat</h4>
+						<h4 class="hsSearch">257.500€</h4>	
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+
+			<a href="../subpaginas/ed_barcelona.html" class="imgFromSearch barcelona barbera barna valles" id="ed_2">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Barcelona</h2>
+						<h4 class="hsSearch">Barberà del Vallès</h4>
+						<h4 class="hsSearch">604.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_gomis.html" class="imgFromSearch barcelona Barcelona barna bcn" id="ed_3">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Gomis, 42</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">230.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_solera.html" class="imgFromSearch barcelona teia barna bcn" id="ed_4">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">La Solera</h2>
+						<h4 class="hsSearch">Teià</h4>
+						<h4 class="hsSearch">690.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+
+			<a href="../subpaginas/ed_marenostrum.html" class="imgFromSearch barcelona badalona barna bcn" id="ed_5">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Marenostrum</h2>
+						<h4 class="hsSearch">Badalona</h4>
+						<h4 class="hsSearch">436.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_montcada_residencial.html" class="imgFromSearch barcelona montcada reixac barna" id="ed_6">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Montcada Residencial</h2>
+						<h4 class="hsSearch">Montcada i Reixac</h4>
+						<h4 class="hsSearch">239.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_pg_maragall.html" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_7">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Pg. Maragall, 368</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">396.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_placa_catalana.html" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_8">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Plaça Catalana</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">336.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_residencial_can_trias.html" class="imgFromSearch barcelona sant andreu barna" id="ed_9">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial Can Trias</h2>
+						<h4 class="hsSearch">Sant Andreu de Llavaneres</h4>
+						<h4 class="hsSearch">324.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_residencial_lledoner_2.html" class="imgFromSearch barcelona granollers barna bcn" id="ed_10">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial El Lledoner 2</h2>
+						<h4 class="hsSearch">Granollers</h4>
+						<h4 class="hsSearch">270.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_residencial_bobila.html" class="imgFromSearch barcelona hospitalet llobregat barna" id="ed_11">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial La Bòbila</h2>
+						<h4 class="hsSearch">L'Hospitalet de Llobregat</h4>
+						<h4 class="hsSearch">257.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_miltre.html" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_12">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Miltre</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">860.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_residencial_triola.html" class="imgFromSearch barcelona sant sadurni barna" id="ed_13">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial La Triola</h2>
+						<h4 class="hsSearch">Sant Sadurní d'anoia</h4>
+						<h4 class="hsSearch">194.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_santalo_143.html" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_14">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Santaló, 143</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_placa_europa.html" class="imgFromSearch barcelona hospitalet llobregat barna" id="ed_15">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Plaça Europa II</h2>
+						<h4 class="hsSearch">L'Hospitalet de Llobregat</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_can_verboom.html" class="imgFromSearch barcelona premia barna bcn" id="ed_16">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Can Verboom</h2>
+						<h4 class="hsSearch">Premia de dalt</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_residencial_tres_creus.html" class="imgFromSearch barcelona sabadell barna bcn" id="ed_17">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial Tres Creus</h2>
+						<h4 class="hsSearch">Sabadell</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_la_sinia.html" class="imgFromSearch barcelona martorell barna bcn" id="ed_18">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">La Sinia</h2>
+						<h4 class="hsSearch">Martorell</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="../subpaginas/ed_arago_226.html" class="imgFromSearch palma mallorca islas baleares" id="ed_19">
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Aragó, 226</h2>
+						<h4 class="hsSearch">Palma de Mallorca</h4>
+						<h4 class="hsSearch">No disponible</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			
+<!--                     otros inmuebles (sin subpag)                     -->
+
+			<a href="#" class="imgFromSearch barcelona bcn barna badalona" id="ed_20">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">La Morera</h2>
+						<h4 class="hsSearch">Badalona</h4>
+						<h4 class="hsSearch">85.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch masnou barcelona bcn barna" id="ed_21">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Itàlia</h2>
+						<h4 class="hsSearch">El Masnou</h4>
+						<h4 class="hsSearch">490€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch Barcelona barcelona bcn barna" id="ed_22">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Mallorca - Eixample</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">39.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch rubi barcelona bcn barna" id="ed_23">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Nou Rubí</h2>
+						<h4 class="hsSearch">Rubí</h4>
+						<h4 class="hsSearch">47.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona granollers barna bcn" id="ed_24">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial El Lledoner</h2>
+						<h4 class="hsSearch">Granollers</h4>
+						<h4 class="hsSearch">192.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona granollers barna bcn" id="ed_25">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial El Lledoner 2</h2>
+						<h4 class="hsSearch">Granollers</h4>
+						<h4 class="hsSearch">74.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn valles" id="ed_26">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Barcelona</h2>
+						<h4 class="hsSearch">Barberà del Vallès</h4>
+						<h4 class="hsSearch">153.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_27">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Les Arts</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">26.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_28">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">St. Pere D'Abanto</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">19.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_29">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici L'Illa</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">21.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_30">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Torres De La Mar Bella</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">21.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_31">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Residencial La Magoria</h2>
+						<h4 class="hsSearch">Barcelona</h4>
+						<h4 class="hsSearch">20.000€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona barna bcn Barcelona" id="ed_32">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Edifici Fontsanta</h2>
+						<h4 class="hsSearch">Esplugues de llobregat</h4>
+						<h4 class="hsSearch">8.700€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+			<a href="#" class="imgFromSearch barcelona hospitalet llobregat bcn" id="ed_33">
+				<span class="hiddenInmueble">Otros inmuebles</span>
+				<div class="ContHs">
+					<div class="ContSearchFlex">
+						<h2 class="hsSearch">Rbla. Just Oliveras</h2>
+						<h4 class="hsSearch">L'Hospitalet de Llobregat</h4>
+						<h4 class="hsSearch">9.500€</h4>
+					</div>
+
+					<div class="ContSearchFlexTwo">
+						<img class="arrow_search" src="../IMG/iconos/arrow_search.svg" alt="flecha indicadora de una sección de búsqueda">
+					</div>
+				</div>
+			</a>
+
+			<script src="../JS/search.js"></script>
+
+		</div>
+
+<!--                    NOT FOUND                    -->
+
+			<a href="../#" class="imgFromSearch c d e f" id="notFound">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch j k n ñ" id="notFound_1">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch o q u w" id="notFound_2">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch x y z _" id="notFound_3">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch . 1 2 3" id="notFound_4">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch 4 5 6 7" id="notFound_5">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+			<a href="../#" class="imgFromSearch 8 9 0 +" id="notFound_6">
+				<span>
+					<h1>4</h1>
+					<img src="../IMG/iconos/logo_grey.svg" alt="404">
+					<h1>4</h1>
+				</span>
+				<h3>No encontrado</h3>
+			</a>
+
+<!-- ---------------------------------------------------- -->
+<!--                        REDES                         -->
+<!-- ---------------------------------------------------- -->
+		<div id="ContRowSocialMediaSearch">
+			<a class="socialMedia" href="https://www.facebook.com/promotoraLaLlavedeOro/" target="_blank">
+				<img id="facebook_media" src="../IMG/iconos/facebook-f.svg" alt="icono de facebook, red social">
+			</a>
+
+			<a class="socialMedia" href="https://www.instagram.com/lallavedeoro_promotora/" target="_blank">
+				<img id="instagram_media" src="../IMG/iconos/instagram-i.svg" alt="icono de instagram, red social">
+			</a>
+
+			<a class="socialMedia" href="../contacto.html" target="_blank">
+				<div id="mail_media"></div>
+			</a>
+		</div>
+<!-- ---------------------------------------------------- -->
+<!--                     IDIOMAS                          -->
+<!-- ---------------------------------------------------- -->
+		<div id="idiomasSearch">
+			<a href="../#" class="idiomas seleccionadoIdioma">ESP</a>
+			<span>|</span>
+			<a href="../#" class="idiomas noSleccionadoIdioma">CAT</a>
+			<span>|</span>
+			<a href="../#" class="idiomas noSleccionadoIdioma">ENG</a>
+		</div>
+	</section>
+<!-- ---------------------------------------------------- -->
+<!--              Botoncito de accesibilidad              -->
+<!-- ---------------------------------------------------- -->
+		<div class="button_master">
+			<div id="button">
+				<button id="buttonAccFixed" class="arrow_bg">
+					<img class="flechita" id="flechitaId" src="../IMG/iconos/plus-solid.svg" alt="">
+				</button>
+			</div>
+
+			<div id="button_2">
+				<a href="../pag_error.html" id="buttonAccFixed_2" class="arrow_bg_2" target="_blank">
+					<img class="flechita" src="../IMG/iconos/person-solid.svg" alt="">
+
+					<h2 class="hoverH1">Botón de accesibilidad <span></span></h2>
+				</a>
+			</div>
+
+			<div id="button_3">
+
+				<a href="../pag_error.html" id="buttonAccFixed_3" class="arrow_bg_3" target="_blank">
+					<img class="flechita" src="../IMG/iconos/question-solid.svg" alt="">
+
+					<h2 class="hoverH2">Botón de ayuda <span></span></h2>
+				</a>
+			</div>
+
+			<script src="../JS/accesibilidad.js"></script>
+		</div>
+
+		
+<!-- ------------------------------------------------ -->
+<!--              BANNER INICIO SUBPAG                -->
+<!-- ------------------------------------------------ -->
+		<section class="ContBannerSubpag_ed_5 ContBannerSubpag_ed_5_">
+			<div class="contTitleSubPag">
+				<h4>TEIÀ</h4>
+				<h1>La Solera</h1>
+			</div>
+
+			<div class="contInfoSubPag">
+				<a class="opacityVolverInicio" href="../promociones.html"><<  Volver al incio</a>
+
+				<span class="infoFlex paddingTopSub">
+					<h2>Desde&nbsp;</h2>
+					<h1>690.000 € + IVA</h1>
+				</span>
+
+				<div class="infoFlex">
+					<img class="widthImgsSub_" src="../IMG/iconos/location-dot-solid.svg" alt="localización de la vivienda">
+					<h4>&nbsp;&nbsp;c/de l'Aqueducte / de Can Pau Valls</h4>
+				</div>
+
+				<div class="infoFlex">
+					<img class="widthImgsSub" src="../IMG/iconos/key-solid.svg" alt="fecha de entrega de la vivienda">
+					<h4>&nbsp;&nbsp;Diciembre 2024</h4>
+				</div>
+			</div>
+		</section>
+
+		<section class="ContTodoElements">
+
+<!--                 Características                 -->
+
+			<section class="ContTodoCaracteristicas">
+				<h1>Características</h1>
+<!-- ------- -->
+				<section class="ContInfoCaracteristicas">
+
+					<div class="wrapInfoSub">
+
+						<span>
+							<img class="widthImgsSub_info" src="../IMG/iconos/bed-solid.svg" alt="de 1, 2, 3 y 4 dormitorios">
+							<h4>&nbsp;&nbsp;1, 2, 3 y 4 dormitorios</h4>
+						</span>
+
+						<span>
+							<img class="widthImgsSub_info" src="../IMG/iconos/toilet-solid.svg" alt="de 1 y 2 baños">
+							<h4>&nbsp;&nbsp;1 y 2 baños</h4>
+						</span>
+
+					</div>
+<!-- ------- -->
+					<div class="wrapInfoSub">
+
+						<span>
+							<img class="widthImgsSub_info" src="../IMG/iconos/car-side-solid.svg" alt="dispone de Garajes">
+							<h4>&nbsp;&nbsp;Garajes</h4>
+						</span>
+
+						<span>
+							<img class="widthImgsSub_info" src="../IMG/iconos/wind-solid.svg" alt="dispone de Aerotermia">
+							<h4>&nbsp;&nbsp;Aerotermia</h4>
+						</span>
+
+					</div>
+<!-- ------- -->
+					<div class="wrapInfoSub">
+
+						<span>
+							<img class="widthImgsSub_info" src="../IMG/iconos/person-swimming-solid.svg" alt="dispone de Aerotermia">
+							<h4>&nbsp;&nbsp;Piscina en cubierta</h4>
+						</span>
+
+						<span>
+							<span class="widthImgsSub_info blockBlack"></span>
+							<h4>&nbsp;&nbsp;Trasteros</h4>
+						</span>
+
+					</div>
+
+				</section>
+
+			</section>
+
+<!--                 Información y ventas                 -->
+
+			<section class="ContTodoInfoYVentas">
+				<h1>Información y ventas</h1>
+<!-- ------- -->
+				<section class="ContInfoInfoYVentas">
+
+					<h4 class="bold_H2_Info">Oficina de Venta:&nbsp;&nbsp;</h4>
+
+					<h4>Can Pau Vall / Aqueducte</h4>
+
+					<h4>
+						<a href="tel:+34687839433">&nbsp;- 687 839 433</a>
+					</h4>
+
+					<h4>
+						<a href="tel:+34636751163">&nbsp;- 636 751 163</a>
+					</h4>
+
+				</section>
+
+			</section>
+
+<!--                 Imágenes                 -->
+
+			<section class="ContTodoImagenes">
+				<h1>Imágenes</h1>
+<!-- ------- -->
+				<div class="colProduct">
+					<div id="colProducteImages_big">
+
+						<img class="thumbnailsCaqui" id="solidBorder" src="../IMG/Edifici La Solera/1.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/2.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/3.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/4.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/5.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/6.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/7.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+						<img class="thumbnailsCaqui" src="../IMG/Edifici La Solera/8.jpg" alt="imagen interior de la vivienda" onclick="setModel('thumbnailsCaqui')">
+
+					</div>
+
+					<div id="colProductImageBig">
+						<img id="bigImage" src="../IMG/Edifici La Solera/1.jpg" alt="">
+					</div>
+
+					<script src="../JS/lightbox.js"></script>
+
+				</div>
+
+			</section>
+
+<!--                 Tipologías de viviendas                 -->
+
+			<section class="ContTodoTabla">
+				<h1>Tipologías de viviendas</h1>
+<!-- ------- -->
+				<section class="ContInfoTabla">
+
+					<div class="contEsctructuraInfo">
+						<h5>Tipo</h5>
+						<h5>Dorm</h5>
+						<h5>Baños</h5>
+						<h5>m2</h5>
+						<h5>Precio desde</h5>
+						<h5>Plano</h5>
+					</div>
+
+					<div class="contEsctructuraInfo_detalles">
+						<h5>Solera 6 Casa B1</h5>
+						<h5>4</h5>
+						<h5>3</h5>
+						<h5>262,00</h5>
+						<h5>690.000 €</h5>
+						<a class="a_PDF_flex" href="https://www.lallavedeoro.com/uploads/promociones/7dc202bf-5df3-4743-b338-7709be365151/promociones_tipologias/8d4bf63d-d98d-4ab0-bbd2-e13e52ba8061/plano/V_LS6_25_B_1.pdf?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">
+
+							<img class="imgArrowPDF" src="../IMG/iconos/file-arrow-down-solid.svg" alt="descarga PDF de los planos">
+
+						</a>
+					</div>
+
+					<div class="contEsctructuraInfo_detalles">
+						<h5>Solera 6 Casa A3</h5>
+						<h5>4</h5>
+						<h5>3</h5>
+						<h5>253,00</h5>
+						<h5>704.000 €</h5>
+						<a class="a_PDF_flex" href="https://www.lallavedeoro.com/uploads/promociones/7dc202bf-5df3-4743-b338-7709be365151/promociones_tipologias/e7bd50f4-b3b7-4165-95d4-dd7b5c242720/plano/V_LS6_29_A_3.pdf?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">
+
+							<img class="imgArrowPDF" src="../IMG/iconos/file-arrow-down-solid.svg" alt="descarga PDF de los planos">
+							
+						</a>
+					</div>
+
+					<div class="contEsctructuraInfo_detalles">
+						<h5>Solera 7 Casa - D</h5>
+						<h5>4</h5>
+						<h5>3</h5>
+						<h5>253,00</h5>
+						<h5>779.000 €</h5>
+						<a class="a_PDF_flex" href="https://www.lallavedeoro.com/uploads/promociones/7dc202bf-5df3-4743-b338-7709be365151/promociones_tipologias/9fe119a2-46a2-46ca-b2cf-bdb75300204f/plano/V_LS7_12-14_E_D.pdf?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">
+
+							<img class="imgArrowPDF" src="../IMG/iconos/file-arrow-down-solid.svg" alt="descarga PDF de los planos">
+							
+						</a>
+					</div>
+
+				</section>
+
+			</section>
+
+<!--                 Descargas                 -->
+
+			<section class="ContTodoDescargas">
+				<h1>Descargas</h1>
+<!-- ------- -->
+				<section class="ContInfoDescargas">
+
+					<div class="contClasificaciones">
+						<img class="imgClasif" src="../IMG/iconos/vr-cardboard-solid.svg" alt="Visita Virtual 360º">
+
+						<h5>Visita Virtual 360º</h5>
+
+						<a href="https://www.lallavedeoro.com/visitas/LaSolera6y7/?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">VER</a>
+						
+					</div>
+
+					<div class="contClasificaciones">
+						<img class="imgClasif" src="../IMG/iconos/book-open-solid.svg" alt="Dosier Comercial">
+
+						<h5>Dosier Comercial</h5>
+
+						<a href="https://www.lallavedeoro.com/uploads/promociones/7dc202bf-5df3-4743-b338-7709be365151/promociones_content/es/dossier_comercial/LLAVEDEORO-CATALOGO-LA-SOLERA-6-7.pdf?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">DESCARGAR</a> 
+
+					</div>
+
+					<div class="contClasificaciones">
+						<img class="imgClasif" src="../IMG/iconos/file-pdf-solid.svg" alt="Memoria de Calidades">
+
+						<h5>Memoria de Calidades</h5>
+
+						<a href="https://www.lallavedeoro.com/uploads/promociones/7dc202bf-5df3-4743-b338-7709be365151/promociones_content/es/memoria_calidades/MQ_LA-SOLERA-6-7_ESP_16-04-24.pdf?utm_medium=cpc&utm_source=google&utm_campaign=prs-llavedeoro-search-marca&utm_content=General&utm_term=la+llave+de+oro&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBHa-sBqqbsuZQ5U15INE-C9FfJxaPlRNwpHkQAv2T1-h-bRQi472xoC4WYQAvD_BwE" target="_blank">DESCARGAR</a> 
+
+					</div>
+
+				</section>
+
+			</section>
+
+<!--                 Ubicación                 -->
+
+			<section class="ContTodoUbicacion">
+				<h1>Ubicación</h1>
+<!-- ------- -->
+				<section class="ContInfoUbicacion">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.580700713401!2d2.3169459765700218!3d41.49168918951829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b0b68aeed795%3A0xf306885b7255b5fb!2sC.%20de%20l&#39;Aq%C3%BCeducte%2C%2008329%20Tei%C3%A0%2C%20Barcelona!5e0!3m2!1seu!2ses!4v1714493560269!5m2!1seu!2ses" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+				</section>
+
+			</section>
+
+<!--                 Sugerencias                 -->
+
+			<section class="ContTodoSugerencias">
+				<h1>Sugerencias</h1>
+<!-- ------- -->
+				<section class="ContInfoSugerencias">
+
+					<a href="../subpaginas/ed_gomis.html" class="imgFromPromo ed_25_sugerencias">
+						<div class="ContHsPromo">
+							<div class="ContPromoFlex">
+								<h4 class="hsPromo">BARCELONA</h2>
+								<h2 class="hsPromoOne">Gomis, 42</h4>
+								<h4 class="hsPromoTwo">Desde 604.000 €</h4>
+							</div>
+						</div>
+					</a>
+
+					<a href="../subpaginas/ed_pg_maragall.html" class="imgFromPromo ed_28_sugerencias">
+						<div class="ContHsPromo">
+							<div class="ContPromoFlex">
+								<h4 class="hsPromo">BARCELONA</h2>
+								<h2 class="hsPromoOne">Pg. Maragall, 368</h4>
+								<h4 class="hsPromoTwo">Desde 396.000 €</h4>
+							</div>
+						</div>
+					</a>
+
+					<a href="../subpaginas/ed_placa_catalana.html" class="imgFromPromo ed_29_sugerencias">
+						<div class="ContHsPromo">
+							<div class="ContPromoFlex">
+								<h4 class="hsPromo">BARCELONA</h2>
+								<h2 class="hsPromoOne">Plaça Catalana</h4>
+								<h4 class="hsPromoTwo">Desde 336.000 €</h4>
+							</div>
+						</div>
+					</a>
+
+				</section>
+
+			</section>
+
+		</section>
+			
+	</main>
+<!-- ------------------------------------------------ -->
+<!--                      FOOTER                      -->
+<!-- ------------------------------------------------ -->
+	<footer>
+
+		<!-- <span class="border_left_footer"></span> -->
+		<!-- <span class="border_right_footer"></span> -->
+
+		<div id="ContFooter">
+			<div id="rowFooterSocials">
+
+				<h1>Sigue nuestro <br> proceso de cerca</h1>
+
+				<div id="ContRowSocialMedia">
+					<a class="socialMedia" href="https://www.facebook.com/promotoraLaLlavedeOro/" target="_blank">
+						<img id="facebook_media" src="../IMG/iconos/facebook-f.svg" alt="icono de facebook, red social">
+					</a>
+
+					<a class="socialMedia" href="https://www.instagram.com/lallavedeoro_promotora/" target="_blank">
+						<img id="instagram_media" src="../IMG/iconos/instagram-i.svg" alt="icono de instagram, red social">
+					</a>
+
+					<a class="socialMedia" href="../contacto.html" target="_blank">
+						<div id="mail_media"></div>
+					</a>	
+				</div>
+			</div>
+<!-- ------------------------------------------------------- -->
+<!--                        dropdown                         -->
+<!-- ------------------------------------------------------- -->
+			<div id="ContDropdownFooter">
+				<h2 class="titolItemAcc" id="titolItemAcc1" onclick="openAcc2()">Oficinas Barcelona
+					<span id="ContSpanLine">
+						<span class="spanLine1">+</span>
+					</span>
+				</h2>
+
+				<div class="textBaseAcc">
+					<ul id="ContNO">
+
+						<a href="https://goo.gl/maps/wXDnZn4x1VCUCemU6" target="_blank" class="textBaseAcc_df">Pg. Manuel Girona, 62</a>
+
+						<span>|</span>
+
+						<a href="mailto:comercial@lallavedeoro.com?" target="_blank" class="textBaseAcc_df">comercial@lallavedeoro.com</a>
+
+						<span>|</span>
+
+						<a href="tel:+34932064000" target="_blank" class="textBaseAcc_df">T. Ventas 932 064 000</a>
+
+						<span>|</span>
+
+						<a href="tel:+34932064004" target="_blank" class="textBaseAcc_df">T. Centralita 932 064 004</a>
+
+					</ul>
+
+				</div>
+
+				<h2 class="titolItemAcc" id="titolItemAcc2" onclick="unfoldFoldAcc()">Oficinas Palma de Mallorca
+					<span id="ContSpanLine_two">
+						<span class="spanLine1">+</span>
+					</span>
+				</h2>
+
+				<div class="textBaseAcc">
+					<ul id="ContNO">
+
+						<a href="https://goo.gl/maps/fEVDjf1nY5vQagzZ7" target="_blank" class="textBaseAcc_df">Costa de les Germanetes, 6</a>
+
+						<span>|</span>
+
+						<a href="mailto:comercial@lallavedeoro.com?" target="_blank" class="textBaseAcc_df">comercial@lallavedeoro.com</a>
+
+						<span>|</span>
+
+						<a href="tel:+34971750440" target="_blank" class="textBaseAcc_df">T. 971 750 440</a>
+
+					</ul>
+
+					<script src="../JS/dropdown.js"></script>
+				</div>
+			</div>
+		</div>
+
+		<section id="ContFooterCopy">
+			<div class="rowCopy">
+				<h3>Copyright © since 2024 – Marc Moreno</h3>
+
+				<div id="ContFooterLegal">
+					<a href="https://www.lallavedeoro.com/avisolegal/?" target="_blank">Aviso Legal</a>
+					
+					<span>|</span>
+
+					<a href="https://www.lallavedeoro.com/politica-privacidad/?" target="_blank">Política de Privacidad</a>
+					
+					<span>|</span>
+
+					<a href="https://www.lallavedeoro.com/politica-cookies/?" target="_blank">Política de Cookies</a>
+					
+					<span>|</span>
+
+					<a href="https://canalresponsable.marcafranca.com/canaletico/presentacion_cliente/4564998405750784" target="_blank">Canal Ético</a>
+				</div>
+
+			</div>	
+		</section>
+	</footer>
+
+	<script>
+		readyCarrusel();
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,764 @@
+/*/////////////////////////////////////*/
+/*                root                 */
+/*/////////////////////////////////////*/
+:root{
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
+    --color-amarillento: #F7F2E8;
+    --color-amarillo: #FFCC00;
+    --color-amarillo-hover: #E4B700;
+    --color-amarillo-oscuro-animate: #c5c1b8;
+
+    --color-gris-oscuro: #37383A;
+    --color-gris-oscuro_opacity: #37383af2;
+    --color-gris-scroll: #7A7A7A;
+
+    --color-search-grey: #CBCBCB;
+    --color-search-arrow: #ebe6dc;
+    --color-scroll-search: #9d9a93;
+}
+/*/////////////////////////////////////*/
+/*               seach                 */
+/*/////////////////////////////////////*/
+#ContSearchTodo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9997;
+    background-color: var(--color-amarillento);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#contsearch {
+    width: 50%;
+    padding: 170px 0px 35px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#contsearch input{
+    width: 100%;
+    /*width: 30%;*/
+    height: 70px;
+    /*font-size: 3.2vw;*/
+    font-size: 62px;
+    font-family: Heuristica-Regular;
+    border: none;
+    outline: none;
+    border-bottom: 1.1px solid #cbcbcb;
+    background-color: transparent;
+}
+#contsearch input::placeholder {
+  color: #CBCBCB;
+  font-weight: 100;
+}
+/*#cerrar{
+    position: absolute;
+    top: 160px;
+    right: 497px;
+
+    font-size: 34px;
+    font-family: cursive;
+    font-weight: 100;
+    background: transparent;
+    color: var(--color-search-grey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}*/
+
+/*      Animación de entrada     */
+#bgSearchAnimateImg{
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 9997;
+    opacity: 0.5;
+    background-image: url(../IMG/iconos/logo_grey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140px;
+
+    animation: activeSearchAnimateOpacity 1.55s ease-out;
+}
+@keyframes activeSearchAnimateOpacity{
+    0%{
+        height: 100%;
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.5;
+    }
+
+    50%{
+        height: 100%;
+        transform: translateY(0px) rotate(180deg);
+        opacity: 0.5;
+    }
+
+    80%{
+        height: 100%;
+        transform: translateY(0px) rotate(360deg);
+        opacity: 0;
+    }
+
+    100%{
+        height: 0%;
+        transform: translateY(1080px) rotate(360deg);
+        opacity: 0;
+    }
+}
+#bgSearchAnimate{
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 9996;
+    background-color: var(--color-search-arrow);
+
+    animation: activeSearchAnimate 1.5s ease-out;
+
+    /*cubic-bezier(.86,0,.12,1)*/
+}
+#bgSearchAnimateTwo{
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 9995;
+    background-color: var(--color-amarillo-oscuro-animate);
+
+    animation: activeSearchAnimate 1.81s ease-out;
+}
+.activeSearchAnimate{
+   /*height: 0% !important;*/
+}
+
+@keyframes activeSearchAnimate{
+    0%{
+        height: 100%;
+        transform: translateY(0px);
+    }
+
+    10%, 90%{
+        height: 100%;
+        transform: translateY(0px);
+    }
+
+    100%{
+        height: 0%;
+        transform: translateY(1080px);
+    }
+}
+
+/*------------------------------------------*/
+#flexSearchCont{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+#ContSearchTodo{
+    transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+.activeSearch{
+    transform: translateY(-1090px);
+}
+
+
+#container {
+    width: 90%;
+    /*height: 800px;*/
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    position: relative;
+    z-index: 2;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/*      scroll modificado     */
+#container::-webkit-scrollbar {
+    background: var(--color-search-arrow) !important;
+    width: 50px;
+    border-radius: 20px;
+}
+#container::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll-search) !important;
+    border-radius: 20px;
+    border: 2.5px solid var(--color-search-arrow);
+}
+#container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scroll-search) !important;
+}
+#container::-webkit-scrollbar:vertical {
+    width: 12px;
+}  
+
+.imgFromSearch{
+    /*width: calc(26% - 20px);*/
+    width: 445px;
+    /*height: 90%;*/
+    height: 445px;  
+    margin: 10px;
+
+    background-size: cover;
+    background-position: top;
+
+	display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    transition: 250ms;
+}
+
+/*                conts hs                */
+.ContHs{
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--color-amarillento);
+    transition: 250ms;
+    display: flex;
+    justify-content: space-between;
+}
+.imgFromSearch:hover .ContHs{
+	padding: 40px 10px;
+}
+.hsSearch{
+	color: var(--color-gris-oscuro);
+	padding: 0px 0px 10px 10px;
+	font-weight: 100;
+}
+.ContHs h2{
+    /*font-size: 1.25vw;*/
+}
+.ContHs h4{
+	opacity: 0.8;
+    /*font-size: 0.9vw;*/
+}
+.ContSearchFlexTwo{
+    display: flex;
+    padding: 16px 23px;
+    margin-right: 12px;
+    background: var(--color-search-arrow);
+    border-radius: 50px;
+    transition: 250ms;
+}
+.arrow_search{
+    width: 100%;
+}
+.imgFromSearch:hover .ContSearchFlexTwo{
+    transform: rotate(45deg);
+}
+/*               hidden inmueble               */
+.hiddenInmueble{
+    position: relative;
+    z-index: 10;
+    /*top: -290px;*/
+    left: -4px;
+    opacity: 1;
+
+    padding: 8px 30px;
+    background: var(--color-search-arrow);
+    color: var(--color-gris-oscuro);
+    font-size: 1rem;
+    transition: 150ms;
+}
+.imgFromSearch:hover .hiddenInmueble{
+    opacity: 0;
+}
+/*               redes & idiomas               */
+#ContRowSocialMediaSearch{
+    display: flex;
+    column-gap: 25px;
+    padding-top: 80px;
+}
+#idiomasSearch{
+    padding-top: 35px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'Heuristica-Regular';
+    display: flex;
+    gap: 10px;
+}
+.idiomas{
+    color: var(--color-gris-oscuro);
+}
+.noSleccionadoIdioma{
+    transition: 250ms;
+}
+.noSleccionadoIdioma:hover{
+    text-decoration:line-through;
+}
+.seleccionadoIdioma{
+    color: var(--color-search-grey);
+}
+/*             edificio background             */
+#ed_1{
+	background: url("../IMG/Promociones destacadas/Edifici_Aprestadora.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_2{
+    background: url("../IMG/Promociones destacadas/Edifici_Barcelona.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_3{
+    background: url("../IMG/Promociones destacadas/Gomis_42.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_4{
+    background: url("../IMG/Promociones destacadas/La_Solera.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_5{
+    background: url("../IMG/Promociones destacadas/Marenostrum.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_6{
+    background: url("../IMG/Promociones destacadas/Montcada_Residencial.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_7{
+    background: url("../IMG/Promociones destacadas/Pg_Maragall_368.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_8{
+    background: url("../IMG/Promociones destacadas/Plaça_Catalana.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_9{
+    background: url("../IMG/Promociones destacadas/Residencial_Can_Trias.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_10{
+    background: url("../IMG/Promociones destacadas/Residencial_El_Lledoner_2.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_11{
+    background: url("../IMG/Promociones destacadas/Residencial_La_Bòbila.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_12{
+    background: url("../IMG/Todas las promociones/Mitre.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_13{
+    background: url("../IMG/Todas las promociones/Residencial_La_Triola.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_14{
+    background: url("../IMG/Todas las promociones/Santal0_143.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_15{
+    background: url("../IMG/Todas las promociones/Placa_Europa_II.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_16{
+    background: url("../IMG/Todas las promociones/Can_Verboom.png");
+    background-size: cover;
+    background-position: top;
+}
+#ed_17{
+    background: url("../IMG/Todas las promociones/Residencial_Tres_Creus.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_18{
+    background: url("../IMG/Todas las promociones/La_Sinia.png");
+    background-size: cover;
+    background-position: top;
+}
+#ed_19{
+    background: url("../IMG/Todas las promociones/Arago_226.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_20{
+    background: url("../IMG/Todos los inmuebles/Locales_La_Morera.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_21{
+    background: url("../IMG/Todos los inmuebles/Oficinas_Edifici_Itàlia_El_Masnou.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_22{
+    background: url("../IMG/Todos los inmuebles/Parking_Mallorca_Eixample.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_23{
+    background: url("../IMG/Todos los inmuebles/Locales_Nou_Rubí.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_24{
+    background: url("../IMG/Todos los inmuebles/Locales_Residencial_El_Lledoner.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_25{
+    background: url("../IMG/Todos los inmuebles/Oficinas_Residencial_El_Lledoner_2.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_26{
+    background: url("../IMG/Todos los inmuebles/Locales_Edifici_Barcelona_1.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_27{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_Les_Arts.jpg");
+    background-size: cover;
+    background-position: left;
+}
+#ed_28{
+    background: url("../IMG/Todos los inmuebles/Parking_St_Pere_DAbanto.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_29{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_LIlla.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_30{
+    background: url("../IMG/Todos los inmuebles/Parking_Torres_De_La_Mar_Bella.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_31{
+    background: url("../IMG/Todos los inmuebles/Parking_Residencial_La_Magoria.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_32{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_Fontsanta.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#ed_33{
+    background: url("../IMG/Todos los inmuebles/Parking_Rbla_Just_Oliveras.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+/*       NOT FOUND      */
+#notFound,
+#notFound_1,
+#notFound_2,
+#notFound_3,
+#notFound_4,
+#notFound_5,
+#notFound_6{
+    width: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    opacity: 0.6;
+    
+    font-weight: 200;
+    font-size: 3.4em;
+
+    position: absolute;
+    top: 268px;;
+    z-index: 1;
+}
+#notFound span,
+#notFound_1 span,
+#notFound_2 span,
+#notFound_3 span,
+#notFound_4 span,
+#notFound_5 span,
+#notFound_6 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#notFound span h1,
+#notFound_1 span h1,
+#notFound_2 span h1,
+#notFound_3 span h1,
+#notFound_4 span h1,
+#notFound_5 span h1,
+#notFound_6 span h1{
+    font-size: 3em;
+    padding: 12px 40px 12px 40px;
+    color: var(--color-gris-oscuro);
+}
+#notFound span img,
+#notFound_1 span img,
+#notFound_2 span img,
+#notFound_3 span img,
+#notFound_4 span img,
+#notFound_5 span img,
+#notFound_6 span img{
+    width: 73px;
+}
+#notFound h3,
+#notFound_1 h3,
+#notFound_2 h3,
+#notFound_3 h3,
+#notFound_4 h3,
+#notFound_5 h3,
+#notFound_6 h3{
+    font-size: 0.9em;
+    color: var(--color-gris-oscuro);
+}
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------pc-------------------*/
+@media only screen and (max-width: 2160px){
+/*BUSCADOR*/
+    .activeSearch{
+        transform: translateY(-4500px);
+    }
+    #ContSearchTodo {
+        transition: 1.4s ease;
+    }
+}
+@media only screen and (max-height: 2160px){
+/*BUSCADOR*/
+    .activeSearch{
+        transform: translateY(-4500px);
+    }
+    #ContSearchTodo {
+        transition: 1.4s ease;
+    }
+}
+
+@media only screen and (max-width: 1800px){
+/*BUSCADOR*/
+    .activeSearch{
+        transform: translateY(-3500px);
+    }
+    #ContSearchTodo {
+        transition: 1.2s ease;
+    }
+}
+@media only screen and (max-height: 1800px){
+/*BUSCADOR*/
+    .activeSearch{
+        transform: translateY(-3500px);
+    }
+    #ContSearchTodo {
+        transition: 1.2s ease;
+    }
+}
+
+/*------------------tablet-------------------*/
+@media only screen and (max-width: 1360px){
+/*BUSCADOR*/
+    #contsearch {
+        width: 60%;
+        padding: 140px 0px 26px 0px;
+    }
+    #contsearch input {
+        height: 53px;
+        font-size: 3.2vw;
+    }
+/*CUADRO DEL BUSCADOR*/
+    #container {
+        width: 90%;
+        /*height: 323px;*/
+    }
+    .imgFromSearch {
+        width: 365px;
+        height: 365px;
+    }
+    .ContHs h2 {
+        font-size: 1.5vw;
+    }
+    .imgFromSearch:hover .ContHs{
+        padding: 22px 0px;
+    }
+    .hsSearch {
+        padding: 0px 0px 9px 10px;
+        font-size: 1.4vw;
+    }
+    .ContSearchFlexTwo {
+        padding: 0px 23px;
+        margin-right: 12px;
+    }
+    .arrow_search{
+        width: 33px;
+    }
+/*REDES*/
+    #ContRowSocialMediaSearch {
+        display: flex;
+        column-gap: 25px;
+        padding-top: 28px;
+    }
+    .socialMedia {
+        width: 50px;
+        height: 50px;
+    }
+    #facebook_media, 
+    #instagram_media {
+        width: 22px;
+        height: 22px;
+    }
+    #mail_media {
+        width: 22px;
+        height: 22px;
+    }
+/*IDIOMAS*/
+    #idiomasSearch {
+        padding-top: 22px;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 1024px){
+/*BUSCADOR*/
+    #contsearch {
+        width: 60%;
+    }
+    #contsearch input {
+        height: 51px;
+        font-size: 42px;
+    }
+/*CUADRO DEL BUSCADOR*/
+    #container {
+        width: 90%;
+        /*height: 323px;*/
+    }
+    .imgFromSearch {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+    .ContHs h2 {
+        font-size: 1.5vw;
+    }
+    .imgFromSearch:hover .ContHs{
+        padding: 22px 0px;
+    }
+    .hsSearch {
+        padding: 0px 0px 9px 10px;
+        font-size: 1.4vw;
+    }
+    .ContSearchFlexTwo {
+        padding: 0px 23px;
+        margin-right: 12px;
+    }
+    .arrow_search{
+        width: 33px;
+    }
+/*REDES*/
+    #ContRowSocialMediaSearch {
+        display: flex;
+        column-gap: 25px;
+        padding-top: 28px;
+    }
+    .socialMedia {
+        width: 50px;
+        height: 50px;
+    }
+    #facebook_media, 
+    #instagram_media {
+        width: 22px;
+        height: 22px;
+    }
+    #mail_media {
+        width: 22px;
+        height: 22px;
+    }
+/*IDIOMAS*/
+    #idiomasSearch {
+        padding-top: 22px;
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 768px){
+/*CUADRO DEL BUSCADOR*/
+    #container {
+        /*height: 594px;*/
+    }
+/*REDES & IDIOMAS*/
+    #flexSearchCont {
+        flex-direction: column-reverse;
+    }
+    #ContRowSocialMediaSearch {
+        padding-top: 15px !important;
+    }
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 720px){
+/*ENTRADA*/
+    #bgSearchAnimateImg {
+        background-size: 106px;
+    }
+/*---*/
+    #contsearch {
+        padding: 160px 0px 22px 0px;
+    }
+    #contsearch input {
+        height: 40px;
+        font-size: 23px;
+    }
+/*CONTENEDOR BUSCADOR*/
+    #container {
+        /*height: 251px;*/
+    }
+/*FLECHA*/
+    .ContSearchFlexTwo {
+        padding: 0px 19px;
+        margin-right: 12px;
+    }
+/*TEXTO*/
+    .ContHs h2 {
+        font-size: 3.5vw;
+    }   
+    .hsSearch {
+        padding: 0px 0px 7px 10px;
+        font-size: 2.5vw;
+    }
+}
+/*------------------Nokia N9-------------------*/
+@media only screen and (max-width: 480px){
+    #container {
+        /*height: 483px;*/
+    }
+}
+/*------------------Nokia Lumia 520-------------------*/
+@media only screen and (max-width: 320px){
+    #contsearch {
+        padding: 139px 0px 22px 0px;
+        width: 86%;
+    }
+    #container {
+        /*height: 204px;*/
+    }
+}

@@ -1,0 +1,31 @@
+/*                   Regular                   */
+@font-face{
+    font-family: Heuristica-Regular;
+    src: url(../Fonts/Heuristica-Regular.otf);
+}
+
+/*                    Bold                    */
+@font-face{
+    font-family: Heuristica-Bold;
+    src: url(../Fonts/Heuristica-Bold.ttf);
+}
+
+
+/*                 BoldItalic                 */
+@font-face{
+    font-family: Heuristica-BoldItalic;
+    src: url(../Fonts/Heuristica-BoldItalic.ttf);
+}
+
+
+/*                   Italic                    */
+@font-face{
+    font-family: Heuristica-Italic;
+    src: url(../Fonts/Heuristica-Italic.ttf);
+}
+
+/*                 Montserrat                  */
+@font-face{
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}

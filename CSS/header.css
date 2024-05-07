@@ -1,0 +1,375 @@
+/*/////////////////////////////////////*/
+/*               header                */
+/*/////////////////////////////////////*/
+
+header{
+/*    position: sticky;
+    top: 0;*/
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+/*#column_pc{
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
+}*/
+#row_top{
+    background: white;
+    width: 100%;
+    height: 15px;
+}
+#ContTodoHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*transition: 0.2s*/
+}
+#ContTodoHeaderResponsive{
+    display: none;
+}
+.activeColor{
+    background-color: transparent !important;
+    transition: .7s;
+}  
+.activeColorTwo{
+    transition-delay: .4s;
+}  
+#ContLogoHeader{
+    display: flex;
+}
+.border_left,
+.border_left_two{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-top-left-radius: 90px;
+    background-color: transparent;
+    box-shadow: -13px -13px 0px 12px #ffffff;
+}
+.border_left{
+   top: 15px;
+   left: 331px;
+}
+.border_left_two{
+    top: 127px;
+    left: 1px;
+}
+#logo_header{
+    padding: 19px;
+    margin-right: 15px;
+    width: 331px;
+    background: var(--color-blanco);
+    border-bottom-right-radius: 60px;
+}
+#logo_header_two{
+    display: none;
+    transition: 0.6s;
+}
+.activeFilter{
+    filter: grayscale(1);
+    transition: 0.6s;
+}
+
+/*                  Busqueda                  */
+
+#search_burguer_header{
+    display: flex;
+    column-gap: 29px;
+    padding: 17px 20px 20px 27px;
+    margin-left: 15px;
+    width: 227px;
+    background: var(--color-blanco);
+    border-bottom-left-radius: 60px;
+}
+
+.border_right,
+.border_right_two{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-top-right-radius: 90px;
+    background-color: transparent;
+    box-shadow: 14px -14px 0px 12px #ffffff;
+}
+.border_right{
+   top: 15px;
+   right: 227px;
+}
+.border_right_two{
+    top: 127px;
+    right: 0px;
+}
+
+.search_button{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background: #000;
+    border: none;
+    transition: 250ms;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#search_img{
+    transition: 250ms;
+}
+.search_button:hover #search_img{
+    transform: rotate(20deg) scale(1.2);
+}
+
+/*                    Menú                    */
+
+.burguer_button,
+.burguer_button_responsive{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background: #000;
+    padding: 26px;
+    border: none;
+    transition: 250ms;
+    cursor: pointer;
+
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    align-content: center;
+    grid-gap: 7px;
+
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/*                Menú lines                */
+
+.line_one,
+.line_two{
+    background: var(--color-blanco);
+    border-radius: 50px;
+    
+}
+#line_one,
+#line_one_search{
+    width: 24.4px;
+    height: 2.4px;
+    background-color: var(--color-blanco);
+
+    position: relative;
+    left: 0px;
+    opacity: 1;
+
+    transition: 250ms ease;
+}
+#line_two,
+#line_two_search{
+    width: 17.4px;
+    height: 2.4px;
+    background-color: var(--color-blanco);
+
+    position: relative;
+    left: 0px;
+    opacity: 1;
+
+    transition: 250ms ease;
+}
+
+/*     hover lines     */
+
+/*.burguer_button:hover .line_one {
+    left: -50px;
+    opacity: 0;
+}
+.burguer_button:hover .line_two {
+    left: 50px;
+    opacity: 0;
+}*/
+/*--------------------*/
+#line_x_id,
+#line_x_search_id,
+#opacSearch,
+#opacBurguer{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    padding: 26px;
+    border: none;
+    transition: 250ms;
+    cursor: pointer;
+    opacity: 1;
+    background-color: transparent;
+
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    align-content: center;
+
+    grid-gap: 7px;
+    z-index: 1;
+    position: absolute;
+
+    overflow: hidden;
+}
+#line_x_id{
+    right: 21px;
+    top: -100px;
+}
+#line_x_search_id{
+    right: 125px;
+    top: -80px;
+}
+
+/*   opac  */
+
+#opacBurguer{
+    right: 21px;
+    top: -100px;
+    z-index: 10;
+}
+#opacSearch{
+    right: 21px;
+    top: -100px;
+    z-index: 10;
+}
+
+
+#line_x_search_id{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    padding: 26px;
+    border: none;
+    transition: 250ms;
+    cursor: pointer;
+    opacity: 1;
+    background-color: transparent;
+
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    align-content: center;
+
+    grid-gap: 7px;
+    z-index: 1;
+    position: absolute;
+
+    overflow: hidden;
+}
+
+
+#line_x_one,
+#line_x_one_search{
+    width: 24.4px;
+    height: 2.4px;
+
+    background: var(--color-blanco);
+
+    position: absolute;
+    left: -17px;
+    top: 8px;
+    transform: rotate(40deg);
+    opacity: 0;
+
+    transition: 450ms ease;
+}
+#line_x_two,
+#line_x_two_search{
+    width: 24.4px;
+    height: 2.4px;
+
+    background: var(--color-blanco);
+    
+    position: absolute;
+    left: -54px;
+    top: 65px;
+    transform: rotate(-40deg);
+    opacity: 0;
+
+    transition: 450ms ease;
+}
+
+/*     hover x lines / hover x lines search     */
+
+/*.burguer_button:hover .line_x_one,
+.burguer_button:hover .line_x_two,
+.search_button:hover .line_x_one_search,
+.search_button:hover .line_x_two_search{
+    left: 26px;
+    top: 37px;
+    opacity: 1;
+}*/
+
+/*.line_x_one_effect{
+    left: 26px;
+    top: 37px;
+    opacity: 1;
+}
+.line_x_two_effect{
+    left: 26px;
+    top: 37px;
+    opacity: 1;
+}*/
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------tablet-------------------*/
+
+@media only screen and (max-width: 1024px){
+/* HEADER RESPONSIVE */
+    .border_left,
+    .border_left_two,
+    .border_right,
+    .border_right_two{
+        display: none
+    }
+    #ContTodoHeader{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-blanco);
+    }
+    #logo_header{
+        display: none
+    }
+    #logo_header_two{
+        width: 75px;
+        display: block;
+        background: transparent;
+        border-bottom-right-radius: 0px;
+    }
+    #search_burguer_header {
+        background: transparent;
+        border-bottom-left-radius: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 720px){
+    #search_burguer_header {
+        padding: 10px 20px 10px 27px;
+        column-gap: 15px;
+        justify-content: flex-end;
+    }
+}
+/*------------------Galaxy Fold (plegable)-------------------*/
+@media only screen and (max-width: 280px){
+    #logo_header_two {
+        width: 60px;
+    }
+
+    .search_button,
+    .burguer_button {
+        width: 65px;
+        height: 65px;
+        justify-content: center;
+    }
+    #search_burguer_header {
+        align-items: center;
+    }
+}

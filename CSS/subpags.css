@@ -1,0 +1,903 @@
+/////////////////////////////////////*/
+/*                root                 */
+/*/////////////////////////////////////*/
+:root{
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
+    --color-amarillento: #F7F2E8;
+    --color-amarillo: #FFCC00;
+    --color-amarillo-hover: #E4B700;
+    --color-amarillo-oscuro-animate: #c5c1b8;
+
+    --color-gris-oscuro: #37383A;
+    --color-gris-oscuro_opacity: #37383af2;
+    --color-gris-scroll: #7A7A7A;
+
+    --color-search-grey: #CBCBCB;
+    --color-search-arrow: #ebe6dc;
+    --color-scroll-search: #9d9a93;
+}
+/*/////////////////////////////////////*/
+/*             CLIP PATH               */
+/*/////////////////////////////////////*/
+#cortePathPromo{
+	width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 935px;
+    background-color: var(--color-blanco);
+    clip-path: polygon(0 80%, 100% 0%, 100% 100%, 0 100%);
+    transition: 410ms;
+}
+/*/////////////////////////////////////*/
+/*        BANNER INICIO SUBPAG         */
+/*/////////////////////////////////////*/
+
+.ContBannerSubpag_ed_1,
+.ContBannerSubpag_ed_2,
+.ContBannerSubpag_ed_3,
+.ContBannerSubpag_ed_4,
+.ContBannerSubpag_ed_5,
+.ContBannerSubpag_ed_6,
+.ContBannerSubpag_ed_7,
+.ContBannerSubpag_ed_8,
+.ContBannerSubpag_ed_9,
+.ContBannerSubpag_ed_10,
+.ContBannerSubpag_ed_11,
+.ContBannerSubpag_ed_12,
+.ContBannerSubpag_ed_13,
+.ContBannerSubpag_ed_14,
+.ContBannerSubpag_ed_15,
+.ContBannerSubpag_ed_16,
+.ContBannerSubpag_ed_17,
+.ContBannerSubpag_ed_18,
+.ContBannerSubpag_ed_19{
+    width: 100%;
+    height: 95vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*filter: brightness(0.75);*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/*-----*/
+.ContBannerSubpag_ed_1{
+    background-image: url("../IMG/Promociones destacadas/Edifici_Aprestadora.jpg");
+}
+.ContBannerSubpag_ed_2{
+    background-image: url("../IMG/Promociones destacadas/Pg_Maragall_368.jpg");
+}
+.ContBannerSubpag_ed_3{
+    background-image: url("../IMG/Promociones destacadas/Gomis_42.jpg");
+}
+.ContBannerSubpag_ed_4{
+    background-image: url("../IMG/Promociones destacadas/Plaça_Catalana.jpg");
+}
+.ContBannerSubpag_ed_5{
+    background-image: url("../IMG/Promociones destacadas/La_Solera.jpg");
+}
+.ContBannerSubpag_ed_6{
+    background-image: url("../IMG/Promociones destacadas/Marenostrum.jpg");
+}
+.ContBannerSubpag_ed_7{
+    background-image: url("../IMG/Promociones destacadas/Residencial_La_Bòbila.jpg");
+}
+.ContBannerSubpag_ed_8{
+    background-image: url("../IMG/Promociones destacadas/Montcada_Residencial.jpg");
+}
+.ContBannerSubpag_ed_9{
+    background-image: url("../IMG/Promociones destacadas/Edifici_Barcelona.jpg");
+}
+.ContBannerSubpag_ed_10{
+    background-image: url("../IMG/Promociones destacadas/Residencial_El_Lledoner_2.jpg");
+}
+.ContBannerSubpag_ed_11{
+    background-image: url("../IMG/Promociones destacadas/Residencial_Can_Trias.jpg");
+}
+.ContBannerSubpag_ed_12{
+    background-image: url("../IMG/Todas las Promociones/Mitre.jpg");
+}
+.ContBannerSubpag_ed_13{
+    background-image: url("../IMG/Todas las Promociones/Residencial_La_Triola.jpg");
+}
+.ContBannerSubpag_ed_14{
+    background-image: url("../IMG/Todas las Promociones/Santal0_143.jpg");
+}
+.ContBannerSubpag_ed_15{
+    background-image: url("../IMG/Todas las Promociones/Placa_Europa_II.jpg");
+}
+.ContBannerSubpag_ed_16{
+    background-image: url("../IMG/Todas las Promociones/Can_Verboom.png");
+}
+.ContBannerSubpag_ed_17{
+    background-image: url("../IMG/Todas las Promociones/Residencial_Tres_Creus.jpg");
+}
+.ContBannerSubpag_ed_18{
+    background-image: url("../IMG/Todas las Promociones/La_Sinia.png");
+}
+.ContBannerSubpag_ed_19{
+    background-image: url("../IMG/Todas las Promociones/Arago_226.jpg");
+}
+/*----------------------------------------------------*/
+/*                     cont title                     */
+/*----------------------------------------------------*/
+.contTitleSubPag{
+    width: 100%;
+    background-color: #00000038;
+    /*background-image: radial-gradient(#0000004a, transparent);*/
+    color: var(--color-blanco);
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    top: 34%;    
+}
+.contTitleSubPag h4{
+    font-size: 1.4em;
+    font-weight: 100;
+}
+.contTitleSubPag h1{
+    font-size: 3.6em;
+    font-family: Heuristica Regular;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+/*                     cont info                     */
+.contInfoSubPag{
+    width: 100%;
+    height: 100%;
+    color: var(--color-blanco);
+    padding: 0px 0px 115px 80px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 15px;
+
+    background-image: linear-gradient(0deg, black 4%, transparent);
+}
+.contInfoSubPag a{
+    font-size: 0.95em;
+    font-weight: 100;
+    color: var(--color-blanco);
+}
+.contInfoSubPag h4{
+    font-size: 1em;
+    font-weight: 100;
+}
+.contInfoSubPag h2{
+    font-size: 2.1em;
+    font-weight: 100;
+}
+.contInfoSubPag h1{
+    font-size: 2.1em;
+    font-weight: 600;
+}
+/*------*/
+.opacityVolverInicio{
+    opacity: 0.75;
+    transition: 250ms;
+}
+.opacityVolverInicio:hover{
+    letter-spacing: 1px;
+}
+
+/*------*/
+.infoFlex{
+    display: flex;
+}
+.paddingTopSub{
+    padding-top: 30px;
+}
+/*------*/
+.widthImgsSub{
+    width: 12px;
+}
+.widthImgsSub_{
+    width: 12px;
+    filter: invert(1);
+}
+/*------*/
+.ContTodoElements{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ContTodoCaracteristicas,
+.ContTodoInfoYVentas,
+.ContTodoImagenes,
+.ContTodoTabla,
+.ContTodoDescargas,
+.ContTodoUbicacion,
+.ContTodoSugerencias{
+    width: 80%;
+    padding-top: 50px;
+}
+.ContTodoCaracteristicas h1,
+.ContTodoInfoYVentas h1,
+.ContTodoImagenes h1,
+.ContTodoTabla h1,
+.ContTodoDescargas h1,
+.ContTodoUbicacion h1,
+.ContTodoSugerencias h1{
+    font-size: 2.1em;
+    font-weight: 100;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-negro);
+}
+/*------*/
+.ContInfoCaracteristicas{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+.wrapInfoSub{
+    height: 100%;
+    padding-top: 20px;
+      
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.wrapInfoSub span{
+    display: flex;
+    align-items: center;
+}
+.widthImgsSub_info{
+    width: 20px;
+    margin-right: 5px;
+}
+.blockBlack{
+    height: 20px;
+    background-color: var(--color-negro);
+    border-radius: 3.5px;
+}
+.blockGreen{
+    height: 20px;
+    background-color: #083111;
+    border-radius: 3.5px;
+}
+.blockBrown{
+    height: 20px;
+    background-color: #311c01;
+    border-radius: 3.5px;
+}
+/*--------*/
+.ContInfoInfoYVentas{
+    display: flex;
+    padding-top: 20px;
+}
+.ContInfoInfoYVentas h4{
+    font-weight: 100;
+}
+.ContInfoInfoYVentas a{
+    color: var(--color-negro);
+}
+.bold_H2_Info{
+    font-weight: 900 !important;
+}
+/*/////////////////////////////////////*/
+/*          carrusel vertical          */
+/*/////////////////////////////////////*/
+.colProduct{
+    width: 100%;
+    height: 100%;
+
+    margin-top: 40px;
+    /*background-color: #fff;*/
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+}
+/*------------------------------------------------*/
+#colProducteImages_big{
+    width: 11%;
+    height: 516px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#colProducteImages{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+#colProducteImages img,
+#colProducteImages_big img{
+    width: 70px;
+    height: 70px;
+
+    object-fit: cover;
+    cursor: pointer;
+}
+#colProductImageBig{
+    height: 516px;
+}
+#colProductImageBig img{
+    width: 1000px;
+    height: 100%;
+
+    object-fit: contain;
+}
+/*-----*/
+#contModelThumbnails{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-bottom: 10px;
+}
+#contModelThumbnails img{
+    width: 17%;
+    height: auto;
+    margin-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* pequeño border para la imgs 1 */
+#solidBorder{
+    border: 2.5px solid;
+}
+/*/////////////////////////////////////*/
+/*                TABLA                */
+/*/////////////////////////////////////*/
+/*.ContInfoTabla{
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}*/
+.contEsctructuraInfo,
+.contEsctructuraInfo_detalles{
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contEsctructuraInfo{
+    padding: 18px 25px;
+    margin-top: 25px;
+    background-color: var(--color-amarillo);
+}
+.contEsctructuraInfo h5{
+    width: 120px;
+    margin: 0 20px;
+    font-size: 1em;
+}
+.contEsctructuraInfo_detalles{
+    padding: 25px;
+    border-bottom: 0.5px solid var(--color-search-grey);
+}
+.contEsctructuraInfo_detalles h5,
+.contEsctructuraInfo_detalles a{
+    width: 120px;
+    margin: 0 20px;
+    font-weight: 100;
+    font-size: 1em;
+}
+.a_PDF_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgArrowPDF{
+    width: 15px;
+}
+/*/////////////////////////////////////*/
+/*              Descargas              */
+/*/////////////////////////////////////*/
+.ContInfoDescargas{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.contClasificaciones{
+    width: 400px;
+
+    text-align: center;
+    padding-top: 45px;
+
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.opacity_no_disponible{
+    opacity: 0.55;
+}
+.contClasificaciones img{
+    opacity: 0.8;
+}
+.contClasificaciones h5{
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+.imgClasif{
+    width: 75px;
+}
+.contClasificaciones a{
+    width: 100%;
+    padding: 22px;
+    font-size: 1.2em;
+    border: none;
+    color: var(--color-negro);
+    background-color: var(--color-amarillo);
+}
+/*/////////////////////////////////////*/
+/*                 MAPS                */
+/*/////////////////////////////////////*/
+.ContInfoUbicación{
+    padding-top: 30px;
+}
+/*/////////////////////////////////////*/
+/*              SUGERENCIAS            */
+/*/////////////////////////////////////*/
+.imgFromPromo {
+    width: 365px;
+    height: 520px;
+    margin: 10px;
+
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    transition: 250ms;
+    border-radius: 20px;
+}
+/*-----*/
+.ContInfoSugerencias{
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.ContHsPromo h4{
+    color: var(--color-gris-oscuro);
+    font-weight: 100;
+}
+.ContHsPromo h2{
+    color: var(--color-gris-oscuro);
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.ContHsPromo {
+    width: 100%;
+    padding: 25px 0;
+    background-color: var(--color-amarillento);
+
+    border: 0.5px solid var(--color-amarillo-oscuro-animate);
+    border-top-width: 0px;
+    border-radius: 0px 0px 20px 20px;
+    transition: 250ms;
+    
+    display: flex;
+    justify-content: space-between;
+}
+/*-----*/
+.ContPromoFlex{
+    width: 365px;
+}
+.hsPromo {
+    padding: 0px 10px 10px 10px;
+}
+.hsPromoOne {
+    padding: 0px 10px 25px 10px;
+    font-family: Heuristica-Regular;
+}
+.hsPromoTwo {
+    padding: 0px 10px 10px 10px;
+}
+
+/*             edificio background             */
+
+.ed_1_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Locales_Edifici_Barcelona_1.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_2_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Locales_La_Morera.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_3_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Locales_Nou_Rubí.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_4_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Locales_Residencial_El_Lledoner.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_5_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Oficinas_Edifici_Itàlia_El_Masnou.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_6_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Oficinas_Residencial_El_Lledoner_2.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_7_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_Fontsanta.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_8_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_Les_Arts.jpg");
+    background-size: cover;
+    background-position: left;
+    scroll-snap-align: center;
+}
+.ed_9_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Edifici_LIlla.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_10_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Mallorca_Eixample.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_11_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Rbla_Just_Oliveras.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_12_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Residencial_La_Magoria.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_13_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_St_Pere_DAbanto.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_14_sugerencias{
+    background: url("../IMG/Todos los inmuebles/Parking_Torres_De_La_Mar_Bella.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+/*-----*/
+.ed_15_sugerencias{
+    background: url("../IMG/Todos las promociones/Arago_226.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_16_sugerencias{
+    background: url("../IMG/Todos las promociones/Can_Verboom.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_17_sugerencias{
+    background: url("../IMG/Todos las promociones/La_Sinia.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_18_sugerencias{
+    background: url("../IMG/Todos las promociones/Mitre.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_19_sugerencias{
+    background: url("../IMG/Todos las promociones/Placa_Europa_II.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_20_sugerencias{
+    background: url("../IMG/Todos las promociones/Residencial_La_Triola.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_21_sugerencias{
+    background: url("../IMG/Todos las promociones/Residencial_Tres_Creus.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_22_sugerencias{
+    background: url("../IMG/Todos las promociones/Santal0_143.jpg");
+    background-size: cover;
+    background-position: left;
+    scroll-snap-align: center;
+}
+/*-----*/
+.ed_23_sugerencias{
+    background: url("../IMG/Promociones destacadas/Edifici_Aprestadora.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_24_sugerencias{
+    background: url("../IMG/Promociones destacadas/Edifici_Barcelona.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_25_sugerencias{
+    background: url("../IMG/Promociones destacadas/Gomis_42.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_26_sugerencias{
+    background: url("../IMG/Promociones destacadas/La_Solera.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_27_sugerencias{
+    background: url("../IMG/Promociones destacadas/Marenostrum.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_28_sugerencias{
+    background: url("../IMG/Promociones destacadas/Pg_Maragall_368.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_29_sugerencias{
+    background: url("../IMG/Promociones destacadas/Plaça_Catalana.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_30_sugerencias{
+    background: url("../IMG/Promociones destacadas/Residencial_Can_Trias.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_31_sugerencias{
+    background: url("../IMG/Promociones destacadas/Residencial_El_Lledoner_2.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+.ed_32_sugerencias{
+    background: url("../IMG/Promociones destacadas/Residencial_La_Bòbila.jpg");
+    background-size: cover;
+    background-position: top;
+    scroll-snap-align: center;
+}
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------tablet-------------------*/
+
+@media only screen and (max-width: 1550px){
+    .ContInfoDescargas {
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1444px){
+    .contTitleSubPag{
+        text-align: center;
+        padding: 10px 30px;
+    }
+    .contTitleSubPag h1 {
+        font-size: 3em;
+    }
+    .contTitleSubPag h4 {
+        font-size: 1.1em;
+    }
+/*----*/
+    .ContTodoCaracteristicas, 
+    .ContTodoInfoYVentas, 
+    .ContTodoImagenes, 
+    .ContTodoTabla, 
+    .ContTodoDescargas, 
+    .ContTodoUbicacion, 
+    .ContTodoSugerencias {
+        overflow: hidden;
+    }
+    .ContTodoTabla {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+    .ContTodoTabla h1{
+        width: 1400px;
+    }
+    .ContInfoTabla {
+        width: 1400px;
+    }
+    .ContInfoSugerencias {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+/*      scroll modificado     */
+
+    .ContInfoTabla::-webkit-scrollbar.
+    .ContTodoSugerencias::-webkit-scrollbar {
+        background: var(--color-search-arrow) !important;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+    }
+    .ContInfoTabla::-webkit-scrollbar-thumb,
+    .ContTodoSugerencias::-webkit-scrollbar-thumb {
+        background-color: var(--color-scroll-search) !important;
+        border-radius: 20px;
+        border: 2.5px solid var(--color-search-arrow);
+    }
+    .ContInfoTabla::-webkit-scrollbar-thumb:hover,
+    .ContTodoSugerencias::-webkit-scrollbar-thumb:hover {
+        background: var(--color-scroll-search) !important;
+    }
+    .ContInfoTabla::-webkit-scrollbar:horizontal,
+    .ContTodoSugerencias::-webkit-scrollbar:horizontal {
+        width: 12px;
+    }
+/*----*/
+    .colProduct {
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #colProductImageBig {
+        height: 100%;
+    }
+    #colProductImageBig img {
+        width: 100%;
+    }
+    #colProducteImages,
+    #colProducteImages_big {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        flex-direction: row;
+    }
+    #colProducteImages_big {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .ContInfoInfoYVentas {
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 660px){
+    .contTitleSubPag h1 {
+        padding-top: 10px;
+        font-size: 2.5em;
+    }
+/*-----*/
+    .contInfoSubPag {
+        padding: 70px 50px;
+    }
+    .contInfoSubPag h1,
+    .contInfoSubPag h2 {
+        font-size: 1.4em;
+    }
+    .infoFlex {
+        flex-wrap: wrap;
+    }
+}
+/*------------------Galaxy Fold (plegable)-------------------*/
+@media only screen and (max-width: 400px){
+    .contInfoSubPag {
+        padding: 70px 25px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .contTitleSubPag h1 {
+        font-size: 1.5em;
+    }
+    .contTitleSubPag h4 {
+        font-size: 0.8em;
+    }
+]
+@media only screen and (max-width: 360px){
+    .contTitleSubPag h1 {
+        font-size: 1.5em;
+    }
+    .contTitleSubPag h4 {
+        font-size: 0.8em;
+    }
+/*----*/
+    .contInfoSubPag a {
+        font-size: 0.6em;
+    }
+    .contInfoSubPag h1, 
+    .contInfoSubPag h2,
+    .contInfoSubPag h4 {
+        font-size: 0.8em;
+    }
+    .widthImgsSub_ {
+        width: 9px;
+        filter: invert(1);
+    }
+/*----*/
+    .ContTodoCaracteristicas h1, 
+    .ContTodoInfoYVentas h1, 
+    .ContTodoImagenes h1, 
+    .ContTodoTabla h1, 
+    .ContTodoDescargas h1, 
+    .ContTodoUbicacion h1, 
+    .ContTodoSugerencias h1 {
+        font-size: 1.45em;
+    }
+
+    .ContInfoCaracteristicas,
+    .ContInfoInfoYVentas,
+    .ContInfoTabla,
+    .ContInfoDescargas {
+        font-size: 15px;
+    }
+/*----*/
+    .contClasificaciones a {
+        padding: 15px;
+    }
+    iframe{
+        height: 450px;
+    }
+    .imgFromPromo {
+        width: 274px;
+        height: 420px;
+    }
+}
