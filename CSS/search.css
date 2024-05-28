@@ -713,6 +713,19 @@
     #ContRowSocialMediaSearch {
         padding-top: 15px !important;
     }
+/*NOT FOUND*/
+    #notFound, #notFound_1, #notFound_2, #notFound_3, #notFound_4, #notFound_5, #notFound_6 {
+        font-size: 2em;
+    }	
+	#notFound span img, 
+	#notFound_1 span img,
+	#notFound_2 span img,
+	#notFound_3 span img, 
+	#notFound_4 span img, 
+	#notFound_5 span img, 
+	#notFound_6 span img {
+	    width: 42px;
+	}
 }
 /*------------------movil-------------------*/
 @media only screen and (max-width: 720px){
