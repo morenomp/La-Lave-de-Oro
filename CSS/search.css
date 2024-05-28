@@ -739,25 +739,17 @@
     }
 /*TEXTO*/
     .ContHs h2 {
-        font-size: 2.2vw;
+        font-size: 0.9em;
     }   
     .hsSearch {
         padding: 0px 0px 7px 10px;
-        font-size: 2vw;
+        font-size: 0.8em;
     }
 }
 /*------------------Nokia N9-------------------*/
 @media only screen and (max-width: 480px){
     #container {
         /*height: 483px;*/
-    }
-/*TEXTO*/
-    .ContHs h2 {
-        font-size: 0.9em;
-    }   
-    .hsSearch {
-        padding: 0px 0px 7px 10px;
-        font-size: 0.8em;
     }
 }
 /*------------------Nokia Lumia 520-------------------*/
