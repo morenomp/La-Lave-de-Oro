@@ -820,6 +820,9 @@
         padding-top: 20px;
         flex-wrap: wrap;
     }
+	#colProducteImages_big{
+	    justify-content: center;
+	}
 }
 /*------------------movil-------------------*/
 @media only screen and (max-width: 660px){
