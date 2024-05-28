@@ -315,6 +315,7 @@
     gap: 15px;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #colProducteImages{
     display: flex;
