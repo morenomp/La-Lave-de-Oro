@@ -1,5 +1,13 @@
 # 📌 **Resumen del proyecto**
-Quien es nuestro cliente?
+¿De qué consta?
+
+    Proyecto final del curso 2022-2024. Donde debíamos escoger una empresa y 
+    realizar su total rediseño.
+    
+    Logotipo, video promocional, página web y demás. Todo ello desde cero para 
+    poner aprueba nuestra creatividad y aprendizaje.
+
+¿Quién es nuestro cliente?
 
     Situada en Barcelona y Palma de Mallorca, La Llave de Oro es una promotora y 
     constructora de viviendas, oficinas, locales comerciales, parkings, etc. 
