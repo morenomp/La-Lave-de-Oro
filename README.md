@@ -18,7 +18,7 @@
     terreno, la urbanización, la construcción y la posterior venta individualizada. 
 
 # 👀 **Ver proyecto**
-Clic ↴↴↴
+⮶ Clic ⮷
 <a href="https://lallavedeoromarc.netlify.app/"><img src ="./IMG/portada-llavedeoro.jpg" alt="portada de la llave de oro"/>
 
 # 🔗 **Más información**
