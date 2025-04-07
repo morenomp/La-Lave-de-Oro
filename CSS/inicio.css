@@ -534,6 +534,21 @@ body{
     background: var(--color-amarillo-hover);
 }
 /*/////////////////////////////////////*/
+/*                ERROR                */
+/*/////////////////////////////////////*/
+#ContTextError{
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+    font-size: 1.5em;
+    text-align: center;
+    padding: 25px;
+}
+/*/////////////////////////////////////*/
 /*               MEDIA                 */
 /*/////////////////////////////////////*/
 
