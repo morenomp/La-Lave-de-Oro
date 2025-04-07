@@ -15,10 +15,10 @@ Quien es nuestro cliente?
 
 # 🔗 **Más información**
 
-[Swing - Parte gráfica](https://academiasanroque.com/guia-basica-sobre-componentes-de-java-swing/)<br/>
-[MVC - Modelo Vista Controlador](https://developer.mozilla.org/es/docs/Glossary/MVC)<br/>
-[Proyecto donde uso MVC](https://github.com/morenomp/First-Modelo-Vista-Controlador)<br/>
-[Uso de HashSet](https://ifgeekthen.nttdata.com/s/post/que-es-hashset-java-y-como-comenzar-con-el-MCNAUUOR4KKBE2HL575A6TGQQ7HE?language=es)<br/>
+[Vídeo de Presentación](https://youtu.be/I8AwqrDGntk)<br/>
+[Vídeo Promocional](https://youtu.be/xzKuKFbGBlY?si=cba7lO8-fTZRGe39)<br/>
+[Memoria](https://drive.google.com/file/d/1WS1AHfabmbqAQysucMaBW2TVoFaLJ4Zi/view?usp=drive_link)<br/>
+[Maquetación](https://www.figma.com/design/l2qsPgt2PVYz0KJEUQOK8v/Fase-6---PI?node-id=1-2)<br/><br/><br/>
 
 > [!IMPORTANT]
 > Este proyecto no busca busca nada más que ser expuesto para poder mostrarlo al jurado del curso GS Gráfica Interactiva en 2024.
