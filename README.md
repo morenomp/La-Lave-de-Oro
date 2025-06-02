@@ -30,3 +30,10 @@
 
 > [!IMPORTANT]
 > Este proyecto no busca busca nada más que ser expuesto para poder mostrarlo al jurado del curso GS Gráfica Interactiva en 2024.
+
+## 📫 Contacta conmigo
+
+- 🌐 Web: [mmorenop.netlify.app](https://mmorenop.netlify.app/)
+- 💼 LinkedIn: [Marc Moreno Pineda](https://es.linkedin.com/in/marc-moreno-pineda)
+- 🎥 YouTube: [@mmoreno-2004](https://www.youtube.com/@mmoreno-2004)
+- 📧 Correo electrónico: morenomp2004@gmail.com
